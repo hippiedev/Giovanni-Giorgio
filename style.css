@@ -1,0 +1,176 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 80px;
+    margin: 0;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    color: #72472b;
+    padding: 20px 0px;
+    padding-right: 230px;
+    line-height: 28px;
+}
+p span {
+    font-weight: 600;
+}
+
+* {
+    font-family: 'Yeseva One', cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+h1 {
+    color: #b67245;
+}
+header {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 48px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.wrapper {
+    overflow-y: hidden;
+}
+#logo {
+    font-size: 26px;
+    color: #b67245;
+    vertical-align: middle;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: relative;
+    top: 10px;
+}
+header ul li {
+    color: #72472b;
+    padding-right: 48px;
+    font-size: 18px;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+    width: 100%;
+    padding: 0 80px;
+    margin-top: 60px;
+}
+.float-image {
+    background: url('/assets/gavel.webp');
+    background-position-y: -90px;
+    background-size: cover;
+    height: 100%;
+    width: 30%;
+    padding-top: 30%;
+    border-radius: 71% 29% 49% 51% / 30% 30% 70% 70% ;
+    animation: floatImage ease-in-out 7s infinite, scale 1.5s ease-out;
+}
+.body-text {
+    color: #72472b;
+    font-size: 48px;
+}
+.body-text > div {
+    margin-top: 48px;
+    overflow-y: hidden;
+}
+section {
+    margin-top: 200px;
+    height: 100vh;
+    width: 100%;
+    padding: 50px 80px;
+}
+#practice-area {
+    position: relative;
+}
+#practice-area .float-image {
+    height: 200px;
+    width: 25%;
+    padding-top: 25%;
+    float: right;
+    position: absolute;
+    left: 70%;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    width: 50%;
+}
+#contact form label {
+    margin-top: 20px;
+    padding: 10px 0px;
+    color: #72472b;
+}
+input {
+    border: 3px solid #b67245d2;
+    outline: none;
+    padding: 5px 10px;
+    font-family: 'Poppins';
+}
+textarea {
+    resize: none;
+    height: 100px;
+    border: 3px solid #b67245d2;
+    outline: none;
+    padding: 5px 10px;
+    font-family: 'Poppins';
+}
+#submit {
+    margin-top: 20px;
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px 20px;
+    border-style: none;
+    background: #b67245;
+    color: #fff;
+}
+
+footer {
+    padding: 30px 0px;
+    width: 100%;
+}
+footer p {
+    padding-right: 0;
+    text-align: center;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translate(-2%, 1%);
+    }
+    33% {
+        transform: translate(0%, 0%);
+    }
+    66% {
+        transform: translate(2%, -1%);
+    }
+    100% {
+        transform: translate(-2%, 1%);
+    }
+}
+@keyframes scale {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
