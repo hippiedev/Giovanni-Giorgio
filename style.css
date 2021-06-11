@@ -70,13 +70,14 @@ ul {
     width: 90%;
     margin: 0 auto;
     padding: 15px;
-    background: #b67245;
+    background: #72472bb0;
     display: none;
     opacity: 0;
     z-index: 100;
 }
 .menu ul {
     top: 0;
+    color: #fff;
 }
 .menu ul li {
     padding-right: none;
