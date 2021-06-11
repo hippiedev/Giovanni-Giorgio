@@ -44,6 +44,10 @@ header {
 .wrapper {
     overflow-y: hidden;
 }
+.menu-wrapper {
+    display: none;
+    overflow: hidden;
+}
 #logo {
     font-size: 26px;
     color: #b67245;
@@ -55,6 +59,29 @@ ul {
     list-style: none;
     position: relative;
     top: 10px;
+}
+.mobile-menu {
+    display: none;
+    z-index: 120;
+}
+.menu {
+    position: absolute;
+    top: 100px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    background: #b67245;
+    display: none;
+    opacity: 0;
+    z-index: 100;
+}
+.menu ul {
+    top: 0;
+}
+.menu ul li {
+    padding-right: none;
+    padding: 10px 0px;
+    font-size: 18px;
 }
 header ul li {
     color: #72472b;
@@ -139,6 +166,30 @@ textarea {
     background: #b67245;
     color: #fff;
 }
+#scroll {
+    height: 50px;
+    color: #fff;
+    width: 50px;
+    border-radius: 50%;
+    background: #b67245;
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    transform: scale(0);
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 100;
+}
+#scroll span {
+    line-height: 50px;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+div#scroll.show {
+    transform: scale(1);
+    transition: 0.3s;
+}
 
 footer {
     padding: 30px 0px;
@@ -147,6 +198,70 @@ footer {
 footer p {
     padding-right: 0;
     text-align: center;
+}
+
+
+@media(max-width: 1000px) {
+    body {
+        padding: 0px 40px;
+    }
+}
+@media(max-width: 768px) {
+    body {
+        padding: 0px 20px;
+        position: relative;
+    }
+    p {
+        padding-right: 20px;
+    }
+    ul {
+        display: none;
+    }
+    .menu-wrapper {
+        display: inline-block;
+    }
+    .menu ul {
+        display: block;
+        animation: none;
+    }
+    .mobile-menu {
+        display: inline-block;
+    }
+    main {
+        padding: 0px 0px;
+        padding-top: 20px;
+    }
+    section {
+        padding: 50px 20px;
+        margin: 380px 0px;
+    }
+    .float-image {
+        width: 200px;
+        padding-top: 200px;
+        position: absolute;
+        height: 220px;
+        left: 40%;
+        top: 42%;
+        z-index: -1;
+    }
+    #practice-area {
+        top: 300px;
+    }
+    #practice-area .float-image {
+        display: none;
+    }
+    #contact {
+        margin: 0px 0px;
+        margin-top: 300px;
+    }
+    #contact form {
+        width: 100%;
+    }
+    #scroll {
+        top: 90%;
+        left: 80%;
+        z-index: 100;
+    }
 }
 
 @keyframes floatImage {
@@ -163,6 +278,7 @@ footer p {
         transform: translate(-2%, 1%);
     }
 }
+
 @keyframes scale {
     0% {
         opacity: 1;

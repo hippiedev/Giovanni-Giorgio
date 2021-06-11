@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&family=Yeseva+One&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://kit.fontawesome.com/8c8a5b4cb9.js"
       crossorigin="anonymous"
@@ -25,7 +26,7 @@
   </head>
   <body>
     <header>
-      <div class="wrapper"><div id="logo">Giovanni Yiokaris</div></div>
+      <div class="wrapper"><div id="logo">Giovanni Giorgio</div></div>
       <ul>
         <span class="wrapper"
           ><li><a href="#value">My values</a></li></span
@@ -33,9 +34,45 @@
         <span class="wrapper"
           ><li><a href="#practice-area">Practice area</a></li></span
         >
-        <span class="wrapper"><li><a href="#contact">Contact</a></li></span>
+        <span class="wrapper"
+          ><li><a href="#contact">Contact</a></li></span
+        >
       </ul>
+      <span class="menu-wrapper">
+      <div class="mobile-menu">
+        <svg
+          id="burger"
+          viewBox="0 0 12 10"
+          class="hamburger"
+          height="35px"
+          width="35px"
+        >
+          <path
+            d="M10,2 L2,2"
+            class="upper"
+            style="fill: none; stroke: #72472b; stroke-linecap: round"
+          />
+          <path
+            d="M2,5 L10,5"
+            class="middle"
+            style="fill: none; stroke: #72472b; stroke-linecap: round"
+          />
+          <path
+            d="M10,8 L2,8"
+            class="lower"
+            style="fill: none; stroke: #72472b; stroke-linecap: round"
+          />
+        </svg>
+      </div>
+      </span>
     </header>
+    <div class="menu" style="filter: blur(0px)">
+      <ul>
+        <li id="link"><a href="#value">My values</a></li>
+        <li id="link1"><a href="#practice-area">Practice area</a></li>
+        <li id="link2"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
     <main>
       <div class="body-text">
         <div class="wrapper">
@@ -44,29 +81,32 @@
         <div class="wrapper"><div id="text">Mastery.</div></div>
       </div>
       <div class="float-image"></div>
+      <div id="scroll">
+        <a href="#"><span>UP</span></a>
+      </div>
     </main>
     <section id="value">
       <h1>My values</h1>
-      <p>
+      <p data-aos="fade-in" data-aos-delay="200" data-aos-duration="800">
         <span>Put client interests above all else.</span> This is perhaps the
         most important Principle and the essence of what it means to be a
         lawyer. As a fiduciary, a lawyer must always act in the best interest of
         his or her client, consistent with the wishes and desires of the client.
       </p>
-      <p>
+      <p data-aos="fade-in" data-aos-delay="200" data-aos-duration="800">
         <span>Act with integrity and honesty in all dealings.</span> We all have
         a basic understanding of what integrity and honesty mean (to act
         consistent with a certain set of values); however, for a lawyer, it also
         means speaking favorably and positively about his client even when his
         client is not present
       </p>
-      <p>
+      <p data-aos="fade-in" data-aos-delay="200" data-aos-duration="800">
         <span>Create value for all clients and set fees accordingly.</span> Our
         goal is to create value for each of my clients. After all, that's why
         they come to me. In exchange for that, I expect to be paid, but not
         beyond the value of the service I provide as agreed to.
       </p>
-      <p>
+      <p data-aos="fade-in" data-aos-delay="200" data-aos-duration="800">
         <span>Strive to attain mastery at all levels.</span> Clients are best
         served when their attorney and his or her staff can think creatively in
         terms of problem solving and helping clients with their legal issues.
@@ -75,7 +115,7 @@
     </section>
     <section id="practice-area">
       <h1>Practice area</h1>
-      <p>
+      <p data-aos="fade-in" data-aos-delay="200" data-aos-duration="800">
         <span>Commercial Law</span><br />Commercial law involves legal problems
         that can occur in the running of businesses and commercial transactions.
         Its predominant concerns are contract and tort law. Clients that come to
@@ -87,19 +127,20 @@
       <div class="float-image"></div>
     </section>
     <section id="contact">
-        <h1>Contact</h1>
-        <form>
-            <label>Name</label>
-            <input id="name" type="text"  />
-            <label>Email</label>
-            <input id="email" type="email"  />
-            <label>Message</label>
-            <textarea id="message"></textarea>
-            <button id="submit" type="submit">Submit</button>
-        </form>
-        <p></p>
+      <h1>Contact</h1>
+      <form data-aos="fade-in" data-aos-delay="200" data-aos-duration="800">
+        <label>Name</label>
+        <input id="name" type="text" />
+        <label>Email</label>
+        <input id="email" type="email" />
+        <label>Message</label>
+        <textarea id="message"></textarea>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+      <p></p>
     </section>
-    <footer><p>&copy; Giovanni Yiokaris</p></footer>
+
+    <footer><p>&copy; Giovanni Giorgio</p></footer>
   </body>
   <script src="index.js"></script>
 </html>
